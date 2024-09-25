@@ -1,0 +1,77 @@
+.nav {
+  @include flex-middle;
+  padding: 1rem 2rem !important;
+  gap: 30px;
+  &__logo {
+    max-width: 200px;
+    flex: 1;
+    @media only screen and (max-width: 760px) {
+      order: 2;
+    }
+  }
+  &__icons {
+    @include flex-middle;
+    column-gap: 20px;
+    i {
+      font-size: var(--nav-el);
+      padding-top: 1rem;
+      transition: all 0.3s;
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+    @media only screen and (max-width: 760px) {
+      display: none;
+    }
+  }
+  &__links {
+    @include flex-middle;
+    width: 40%;
+    @media only screen and (max-width: 760px) {
+      display: none;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      gap: 2rem;
+      z-index: 100;
+      position: fixed;
+      height: 100vh;
+      background-color: #fff;
+      top: 0;
+      right: 0;
+      width: max-content;
+      padding: 2rem 4rem 2rem 8rem;
+      &.show {
+        display: flex;
+      }
+    }
+  }
+  &__link {
+    color: var(--black);
+    font-size: var(--nav-el);
+    line-height: 1.3;
+    transition: all 0.3s;
+    padding-top: 1rem;
+    position: relative;
+    @media only screen and (max-width: 760px) {
+      font-size: 3rem;
+    }
+  }
+  &__link:hover {
+    color: var(--primary-color);
+  }
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 3px;
+  width: 0;
+  right: 0;
+  top: 0px;
+  transition: all 0.3s;
+}
+.nav__link:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "elchamsboutique",
+  "version": "1.0.0",
+  "description": "for e-commerce store",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass sass/main.scss css/style.css -w",
+    "dev-server": "live-server",
+    "start": "npm-run-all --parallel dev-server watch:sass"
+  },
+  "author": "abdellatif kichah",
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.6.2"
+  }
+}

@@ -1,0 +1,80 @@
+.hero__heading {
+  font-size: var(--fs-h1);
+  text-align: right;
+  line-height: 1.6;
+  color: var(--white);
+  .pc {
+    color: var(--primary-color);
+  }
+}
+.hero_text {
+  color: var(--white);
+  font-family: var(--ff-text);
+  font-weight: var(--fw-light);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  @include respond(tab-land) {
+    font-size: 1.3rem;
+  }
+}
+.heading-1 {
+  color: var(--primary-color);
+  font-size: var(--fs-h2);
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+.heading-2 {
+  font-size: var(--fs-h4);
+  line-height: 1.4;
+}
+.heading-3 {
+  font-size: var(--fs-h3);
+  color: var(--secondary-color);
+  line-height: 1.4;
+}
+.price {
+  font-family: var(--ff-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: row-reverse;
+}
+.heading-4 {
+  font-weight: var(--fw-d-bold);
+  text-align: right;
+}
+//footer
+.footer__link {
+  font-weight: var(--fw-light);
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  @include respond(tab-port) {
+    font-size: larger;
+  }
+  &:hover {
+    color: var(--secondary-color);
+  }
+  i {
+    font-size: 1.2rem;
+    @include respond(tab-port) {
+      font-size: large;
+    }
+  }
+}
+//copy right
+.copy {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 1px #999 solid;
+  @include respond(small-phone) {
+    text-align: center;
+  }
+}
+
+// utility
+.tc {
+  text-align: center !important;
+}

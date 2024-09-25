@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Lemonada';
+  src: url('/public/fonts/Lemonada/Lemonada-font.ttf');
+}
+
+@font-face {
+  font-family: 'Lemonada';
+  src: url('/public/fonts/Noto_Sans_Arabic/NotoSansArabic.ttf');
+}
+
+:root {
+  --nav-el: 1.1rem;
+  --primary-color: #dcb958;
+  --primary-color-600: #a28022;
+  --secondary-color: #587bdc;
+  --secondary-color-2: #7758dc;
+
+  --black: #000;
+  --white: #fff;
+
+  --section-bg: #f0ead6;
+
+  --card-bg: #fff;
+  --test-color: #f0f8ff;
+  --pc-text: #4b3832;
+  --links-color: #625959;
+  --links-color--300: #060505;
+
+  --ff-display: 'Lemonada', sans-serif;
+  --ff-text: 'noto sans', serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+
+  --fw-d-semibold: 600;
+  --fw-d-bold: 700;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2rem;
+  --fs-h3: 1.5rem;
+  --fs-h4: 1rem;
+
+  --fs-text: 1.125rem;
+  --fs-cap: 0.9rem;
+  --fs-btn: 1rem;
+
+  --box-rd: 0.5rem;
+
+  --box-shadow: 0px 5px 35px rgba(#000, 0.1);
+}
+
+@mixin flex-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media only screen and (max-width: 475px) {
+      //600px
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 600px) {
+      //600px
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-phone {
+    @media only screen and (max-width: 720px) {
+      //600px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 900px) {
+      //900px
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 1024px) {
+      //1200px
+      @content;
+    }
+  }
+}

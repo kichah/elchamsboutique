@@ -1,0 +1,48 @@
+.footer {
+  background-color: #f5f5dc;
+  padding-top: 4rem;
+  overflow-x: hidden;
+  @include respond(small-phone) {
+    padding-top: 2rem;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr) 2fr;
+    gap: 2rem;
+
+    @include respond(tab-port) {
+      gap: 1.2rem;
+    }
+    @include respond(big-phone) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      align-content: center;
+      gap: 1rem;
+    }
+    @include respond(small-phone) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-content: center;
+      gap: 1rem;
+    }
+  }
+  &__logo {
+    img {
+      max-width: 150px;
+    }
+    p {
+      font-size: 1.1rem;
+      font-weight: 300;
+      padding-top: 1rem;
+      @include respond(tab-port) {
+        text-align: center;
+      }
+    }
+  }
+  &__box {
+    padding-top: 1.5rem;
+  }
+  & .container {
+    padding-bottom: 0;
+  }
+}
