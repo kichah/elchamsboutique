@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.testimonial__container', {
   grabCursor: true,
   spaceBetween: 32,
   pagination: {
@@ -25,4 +25,15 @@ overlay.addEventListener('click', () => {
   menu.classList.remove('show');
   overlay.classList.remove('show');
 });
-function removeOverlay() {}
+function removeOverlay() {
+  menu.classList.remove('show');
+  overlay.classList.remove('show');
+}
+
+const swiperProduct = new Swiper('.mySiwper', {
+  grabCursor: true,
+  spaceBetween: 8,
+  slidesPerView: 4,
+  loop: true,
+});
+console.log(swiperProduct);

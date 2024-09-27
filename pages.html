@@ -17,23 +17,89 @@
 
     <title>Elchams Boutique</title>
   </head>
-  <body>
-      <header class="nav container">
-        <img class="nav__logo" alt="Logo" src="/public/img/ElChamasBoutique.svg"></img>
+  <body >
+    <header>
+      <div class="overlay"></div>
 
-        <nav class="nav__links">
-          <a href="#" class="nav__link">الصفحة الرئيسية</a>
-          <a href="#" class="nav__link">التسوق</a>
-          <a href="#" class="nav__link">حول المتجر</a>
-          <a href="#" class="nav__link">اتصل بنا</a>
-        </nav>
+      <nav class="nav container">
+        <a class="nav__logo" href="/index.html">
+          <img  alt="Logo" src="/public/img/ElChamasBoutique.svg"></img>
+        </a>
+
+        <ul class="nav__links">
+          <li class="nav__link"><a href="/index.html" >الصفحة الرئيسية</a></li>
+          <li class="nav__link"><a href="/pages.html" >التسوق</a></li>
+          <li class="nav__link"><a href="/pages.html" >حول المتجر</a></li>
+          <li class="nav__link"><a href="/pages.html" >اتصل بنا</a></li>
+        </ul>
         <div class="nav__icons">
-          <a href="#shop"><img src="/public/img/Shopping-Cart--Streamline-Phosphor.svg" alt="shopping icon" class="nav__icon"></a>
-        
-          <a href="#search"><img src="/public/img/Magnifying-Glass--Streamline-Phosphor.svg" alt="search icon" class="nav__icon"></a>
+          <a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#shop"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
-      </header>
+        <button class="menu"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+    </header>
       
+      <main class="product--page section"> 
+          <div class="product--page__container">
+            
+            <div class="product--page__container-image">
+              <div class="product--page__image ">
+                <img class="main" src="/public/img/414ce0.jpg" alt="">
+                <div class="mySiwper swiper">
+                  <div class="swiper-wrapper">
+                      <img class="sub swiper-slide" src="/public/img/414ce0.jpg" alt="">
+                      <img class="sub swiper-slide" src="/public/img/414ce0.jpg" alt="">
+                      <img class="sub swiper-slide" src="/public/img/414ce0.jpg" alt="">
+                      <img class="sub swiper-slide" src="/public/img/414ce0.jpg" alt="">
+                      <img class="sub swiper-slide" src="/public/img/414ce0.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product--page__container-text">
+              <div class="product--page__description">
+                <div class="description__heading">
+                  <h1>مثقاب الي رفيع الاجودة وكثير الإستعمال</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, modi.</p>
+                  <div class="stuck">
+                    <p class="price">1500 دج</p>
+                    <p class="price "><span class="price--sale">2000 دج</span> <span class="percent">20%</span></p>
+                  </div>
+                </div>
+
+                  <form class="form" action="submit">
+                    <div class="form-group">
+                      <label for="fname">الإسم الكامل:</label>
+                      <input type="text" id="fname" name="fname" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">رقم الهاتف:</label>
+                      <input type="number" id="phone" name="phone" placeholder="0658940608" required>
+                    </div>
+                    <div class="form-group ">
+                      <label for="province">مكان التوصيل:</label>
+                      <div class="form-location">
+                        <select id="province" name="province">
+                        <option value="">الولاية</option>
+                        </select>
+                      
+                        <select id="city" name="city">
+                        <option value="">الولاية</option>
+                      </select>
+                      </div>
+                    </div>
+
+                  </form>
+                <div class="description__details">
+                  <h2>details</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium quis reiciendis officia libero voluptatibus, explicabo minima, molestiae est at harum expedita velit! Tenetur architecto tempora quod, praesentium voluptate illum!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+
       <footer class="footer">
         <div class="container">
           <div class="footer__container">
@@ -43,26 +109,27 @@
             </div>
             <div class="footer__box">
               <h4 class="heading-4">معلومات المتجر:</h4>
-              <a href="/pages" class="footer__link">حول المتجر</a>
-              <a href="#" class="footer__link">سياسة الخصوصية</a>
-              <a href="#" class="footer__link">الشروط والأحكام</a>
+              <a href="/pages.html" class="footer__link">حول المتجر</a>
+              <a href="/pages.html" class="footer__link">سياسة الخصوصية</a>
+              <a href="/pages.html" class="footer__link">الشروط والأحكام</a>
             </div>
             <div class="footer__box">
-              <h4 class="heading-4">معلومات المتجر:</h4>
-              <a href="#" class="footer__link">الأسئلة الشائعة</a>
-              <a href="#" class="footer__link">الشحن والتوصيل</a>
-              <a href="#" class="footer__link">سياسة الإرجاع </a>
-              <a href="#" class="footer__link">اتصل بنا</a>
+              <h4 class="heading-4">الدعم:</h4>
+              <a href="/pages.html" class="footer__link">الأسئلة الشائعة</a>
+              <a href="/pages.html" class="footer__link">الشحن والتوصيل</a>
+              <a href="/pages.html" class="footer__link">سياسة الإرجاع </a>
+              <a href="/pages.html" class="footer__link">اتصل بنا</a>
             </div>
             <div class="footer__box">
-              <h4 class="heading-4">وسائل التواصل الاجتماعي:</h4>
+              <h4 class="heading-4 tc">وسائل التواصل الاجتماعي:</h4>
               <div class="flex">
-                <a class="footer__link" href="fb.com"><i class="fa fa-facebook"></i></a>
-                <a class="footer__link" href="fb.com"><i class="fa fa-instagram"></i></a>
-                <a class="footer__link" href="fb.com"><i class="fa fa-twitter"></i></a>              
+                <a class="footer__link" href="https://www.facebook.com/elchamsboutique/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a class="footer__link" href="https://www.instagram.com/elchamsboutique05/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a class="footer__link" href="fb.com" target="_blank"><i class="fa fa-twitter"></i></a>              
               </div>
             </div>
           </div>
+          <p class="copy">to ElChamsBoutique &copy;</p>
         </div>
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
