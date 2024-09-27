@@ -70,7 +70,7 @@
   --secondary-color-2: #7758dc;
   --black: #000;
   --white: #fff;
-  --section-bg: #f0ead6;
+  --section-bg: #fafafa;
   --card-bg: #fff;
   --test-color: #f0f8ff;
   --pc-text: #4b3832;
@@ -141,7 +141,7 @@ img {
 
 body {
   font-family: var(--ff-text);
-  background-color: #fffff0;
+  background-color: var(--section-bg);
   direction: rtl;
 }
 
@@ -190,7 +190,7 @@ a {
 }
 
 .heading-1 {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: var(--fs-h2);
   line-height: 1.4;
   margin-bottom: 2rem;
@@ -220,6 +220,11 @@ a {
   font-weight: var(--fw-d-bold);
   text-align: right;
 }
+@media only screen and (max-width: 475px) {
+  .heading-4 {
+    text-align: center;
+  }
+}
 
 .footer__link {
   font-weight: var(--fw-light);
@@ -231,6 +236,11 @@ a {
 @media only screen and (max-width: 900px) {
   .footer__link {
     font-size: larger;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .footer__link {
+    text-align: center;
   }
 }
 .footer__link:hover {
@@ -246,9 +256,11 @@ a {
 }
 
 .copy {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem;
   border-top: 1px #999 solid;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
 }
 @media only screen and (max-width: 475px) {
   .copy {
@@ -270,13 +282,18 @@ a {
 
 .card__layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1rem;
+}
+@media only screen and (min-width: 1024px) {
+  .card__layout {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }
 
 .section {
   padding: 4rem 0;
-  background-color: #fffff0;
+  background-color: var(--section-bg);
 }
 @media only screen and (max-width: 1024px) {
   .section {
@@ -320,6 +337,11 @@ a {
 @media only screen and (max-width: 1024px) {
   .hero {
     background-size: cover;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .hero {
+    height: 50vh;
   }
 }
 .hero__container {
@@ -501,7 +523,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem !important;
+  padding: 0rem 2rem 1rem 2rem !important;
   gap: 30px;
 }
 .nav__logo {
