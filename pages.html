@@ -45,15 +45,18 @@
             
             <div class="product--page__container-image">
               <div class="product--page__image ">
-                <img class="main" src="/public/img/414ce0.jpg" alt="">
-                <div class="mySiwper swiper">
-                  <div class="swiper-wrapper">
-                      <img class="sub swiper-slide" src="/public/img/414ce0.jpg" alt="">
-                      <img class="sub swiper-slide" src="/public/img/414ce0.jpg" alt="">
-                      <img class="sub swiper-slide" src="/public/img/414ce0.jpg" alt="">
-                      <img class="sub swiper-slide" src="/public/img/414ce0.jpg" alt="">
+                <img class="main" src="/public/img/ffffff.jpg" alt="">
+                <div class="mySwiper swiper">
+                  <div class="swiper-wrapper image-holder">
+                      <img class="sub swiper-slide current-img" src="/public/img/ffffff.jpg" alt="">
+                      <img class="sub swiper-slide" src="/public/img/ffffff-2.jpg" alt="">
+                      <img class="sub swiper-slide" src="/public/img/ffffff-3.jpg" alt="">
+                      <img class="sub swiper-slide" src="/public/img/ffffff-4.jpg" alt="">
                       <img class="sub swiper-slide" src="/public/img/414ce0.jpg" alt="">
                   </div>
+                  <div class="swiper-button-prev btn-img"></div>
+                  <div class="swiper-button-next btn-img"></div>
+                
                 </div>
               </div>
             </div>
@@ -80,12 +83,13 @@
                     <div class="form-group ">
                       <label for="province">مكان التوصيل:</label>
                       <div class="form-location">
-                        <select id="province" name="province">
+                        <select id="province" name="province" required>
                         <option value="">الولاية</option>
+                        <option value="batna">batna</option>
                         </select>
                       
-                        <select id="city" name="city">
-                        <option value="">الولاية</option>
+                        <select id="city" name="city" disabled>
+                        <option value="">البلدية</option>
                       </select>
                       </div>
                     </div>

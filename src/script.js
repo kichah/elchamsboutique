@@ -2,7 +2,7 @@ const swiper = new Swiper('.testimonial__container', {
   grabCursor: true,
   spaceBetween: 32,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.testimonial__pagination',
   },
 
   breakpoints: {
@@ -30,10 +30,46 @@ function removeOverlay() {
   overlay.classList.remove('show');
 }
 
-const swiperProduct = new Swiper('.mySiwper', {
+const swiperProduct = new Swiper('.mySwiper', {
   grabCursor: true,
   spaceBetween: 8,
-  slidesPerView: 4,
+  slidesPerView: 1,
   loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    760: {
+      slidesPerView: 4,
+    },
+  },
 });
-console.log(swiperProduct);
+
+// img chooser
+const imageHolder = document.querySelector('.image-holder');
+const mainImage = document.querySelector('.main');
+const imgs = document.querySelectorAll('.sub');
+imageHolder.addEventListener('click', (e) => {
+  if (!e.target.closest('img')) return;
+  let imagePressed = e.target.closest('img');
+  removeAllCl();
+  imagePressed.classList.add('current-img');
+  mainImage.src = imagePressed.src;
+});
+// remove current class
+function removeAllCl() {
+  console.log('done');
+  imgs.forEach((img) => {
+    img.classList.remove('current-img');
+  });
+}
+// select is active
+const selectPro = document.querySelector('#province');
+const selectCity = document.querySelector('#city');
+
+selectPro.addEventListener('change', (e) => {
+  if (!selectPro.value) return;
+  console.log(selectCity.disabled);
+  selectCity.disabled = false;
+});
