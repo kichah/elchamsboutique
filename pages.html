@@ -20,15 +20,13 @@
   <body >
     <header>
       <div class="overlay"></div>
-
       <nav class="nav container">
         <a class="nav__logo" href="/index.html">
           <img  alt="Logo" src="/public/img/ElChamasBoutique.svg"></img>
         </a>
-
         <ul class="nav__links">
           <li class="nav__link"><a href="/index.html" >الصفحة الرئيسية</a></li>
-          <li class="nav__link"><a href="/pages.html" >التسوق</a></li>
+          <li class="nav__link"><a href="/productPage.html" >التسوق</a></li>
           <li class="nav__link"><a href="/pages.html" >حول المتجر</a></li>
           <li class="nav__link"><a href="/pages.html" >اتصل بنا</a></li>
         </ul>
@@ -39,69 +37,38 @@
         <button class="menu"><i class="fa-solid fa-bars"></i></button>
       </nav>
     </header>
-      
-      <main class="product--page section"> 
-          <div class="product--page__container">
-            
-            <div class="product--page__container-image">
-              <div class="product--page__image ">
-                <img class="main" src="/public/img/ffffff.jpg" alt="">
-                <div class="mySwiper swiper">
-                  <div class="swiper-wrapper image-holder">
-                      <img class="sub swiper-slide current-img" src="/public/img/ffffff.jpg" alt="">
-                      <img class="sub swiper-slide" src="/public/img/ffffff-2.jpg" alt="">
-                      <img class="sub swiper-slide" src="/public/img/ffffff-3.jpg" alt="">
-                      <img class="sub swiper-slide" src="/public/img/ffffff-4.jpg" alt="">
-                      <img class="sub swiper-slide" src="/public/img/414ce0.jpg" alt="">
-                  </div>
-                  <div class="swiper-button-prev btn-img"></div>
-                  <div class="swiper-button-next btn-img"></div>
-                
-                </div>
+      <main class="pages"> 
+          <div class="container">
+            <h1 class="page-heading">حول المتجر:</h1>
+          <p class="page-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus facere quia nulla quod officiis veniam culpa neque quasi quaerat. Aliquam, ex veritatis itaque soluta, odio dolorem fugit minima beatae vel vitae ducimus exercitationem velit! Praesentium consequuntur velit dolorum obcaecati consectetur ab earum, quod modi eius, vel assumenda minus beatae?.
+          </p>
+          <div class="feature">
+            <div class="feature-box">
+              <div class="feature-img">
+                <i class="fa-solid fa-medal"></i>
               </div>
+              <h2 class="feature-title">سرعة في التوصيل</h2>
+              <p class="feature-text">منتجاتنا واصلة ترند وعالية الجودة</p>
             </div>
-            <div class="product--page__container-text">
-              <div class="product--page__description">
-                <div class="description__heading">
-                  <h1>مثقاب الي رفيع الاجودة وكثير الإستعمال</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, modi.</p>
-                  <div class="stuck">
-                    <p class="price">1500 دج</p>
-                    <p class="price "><span class="price--sale">2000 دج</span> <span class="percent">20%</span></p>
-                  </div>
-                </div>
-
-                  <form class="form" action="submit">
-                    <div class="form-group">
-                      <label for="fname">الإسم الكامل:</label>
-                      <input type="text" id="fname" name="fname" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="phone">رقم الهاتف:</label>
-                      <input type="number" id="phone" name="phone" placeholder="0658940608" required>
-                    </div>
-                    <div class="form-group ">
-                      <label for="province">مكان التوصيل:</label>
-                      <div class="form-location">
-                        <select id="province" name="province" required>
-                        <option value="">الولاية</option>
-                        <option value="batna">batna</option>
-                        </select>
-                      
-                        <select id="city" name="city" disabled>
-                        <option value="">البلدية</option>
-                      </select>
-                      </div>
-                    </div>
-
-                  </form>
-                <div class="description__details">
-                  <h2>details</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium quis reiciendis officia libero voluptatibus, explicabo minima, molestiae est at harum expedita velit! Tenetur architecto tempora quod, praesentium voluptate illum!</p>
-                </div>
+            <div class="feature-box">
+              <div class="feature-img">
+                <i class="fa-solid fa-truck-fast"></i>
               </div>
+              <h2 class="feature-title">سرعة في التوصيل</h2>
+              <p class="feature-text">توصيل بأرع شيء داخل الجزائر</p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-img">
+                <i class="fa-solid fa-wallet"></i>
+              </div>
+              <h2 class="feature-title">سرعة في التوصيل</h2>
+              <p class="feature-text">توصيل بأرع شيء داخل الجزائرعبر بطاقة مدى ، أبل بي, تمارا ,الدفع عند الاستلام،</p>
             </div>
           </div>
+        </div>
+        
+        
       </main>
 
       <footer class="footer">

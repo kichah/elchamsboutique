@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://kit.fontawesome.com/c036ef1898.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Elchams Boutique</title>
+  </head>
+  <body >
+    <header>
+      <div class="overlay"></div>
+
+      <nav class="nav container">
+        <a class="nav__logo" href="/index.html">
+          <img  alt="Logo" src="/public/img/ElChamasBoutique.svg"></img>
+        </a>
+
+        <ul class="nav__links">
+          <li class="nav__link"><a href="/index.html" >الصفحة الرئيسية</a></li>
+          <li class="nav__link"><a href="/productPage.html" >التسوق</a></li>
+          <li class="nav__link"><a href="/pages.html" >حول المتجر</a></li>
+          <li class="nav__link"><a href="/pages.html" >اتصل بنا</a></li>
+        </ul>
+        <div class="nav__icons">
+          <a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#shop"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <button class="menu"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+    </header>
+      
+      <main class="product--page"> 
+          <div class="product--page__container">
+            
+            <div class="product--page__container-image">
+              <div class="product--page__image ">
+                <img class="main" src="/public/img/ffffff.jpg" alt="">
+                <div class="mySwiper swiper">
+                  <div class="swiper-wrapper image-holder">
+                      <img class="sub swiper-slide current-img" src="/public/img/ffffff.jpg" alt="">
+                      <img class="sub swiper-slide" src="/public/img/ffffff-2.jpg" alt="">
+                      <img class="sub swiper-slide" src="/public/img/ffffff-3.jpg" alt="">
+                      <img class="sub swiper-slide" src="/public/img/ffffff-4.jpg" alt="">
+                      <img class="sub swiper-slide" src="/public/img/414ce0.jpg" alt="">
+                  </div>
+                  <div class="swiper-button-prev btn-img"></div>
+                  <div class="swiper-button-next btn-img"></div>
+                
+                </div>
+              </div>
+            </div>
+            
+            <div class="product--page__container-text">
+              <div class="product--page__description">
+                <div class="description__heading">
+                  <h1>مثقاب الي رفيع الاجودة وكثير الإستعمال</h1>
+                  <p>هذا القميص ناعم ومريح. </p>
+                  <div>
+                    <p class="product--page_price">عرض مؤقت! <span class="after">1500دج</span> <span class="before">2000 دج</span></p>
+                  </div>
+                </div>
+
+                  <form class="form" action="submit">
+                    <h3 class="form-heading">إملئ الأسفل للطلب</h3>
+                    <div class="form-group">
+                      <label for="fname"><i class="fa-solid fa-user"></i> &nbsp;الإسم الكامل:</label>
+                      <input type="text" id="fname" name="fname" placeholder="الإسم الكامل" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="phone"><i class="fa-solid fa-phone-flip"></i> &nbsp;رقم الهاتف:</label>
+                      <input type="number" id="phone" name="phone" placeholder="رقم الهاتف" required>
+                    </div>
+                    <div class="form-group ">
+                      <label for="province">مكان التوصيل:</label>
+                      <div class="form-location">
+                        <select id="province" name="province" required>
+                        <option value="">الولاية</option>
+                        <option value="batna">batna</option>
+                        </select>
+                      
+                        <select id="city" name="city" disabled required>
+                        <option value="">البلدية</option>
+                      </select>
+                      </div>
+                      <span class="total_price">السعر: <span class="total">1500</span> دج</span>
+                      <div class="form-order">
+                        <div class="order">
+                          <div class="btn-number"><i class="fa fa-plus"></i></div>
+                          <input tabindex="-1" id="order_size" type="number" max="10" min="1" value="1">
+                          <div class="btn-number"><i class="fa fa-minus"></i></div>
+                        </div>
+                        <button class="btn btn-submit" type="submit">أطلب الآن</button>
+                      </div>
+                    </div>
+                  </form>
+
+                <div class="description__details">
+                  <h2>الوصف:</h2>
+                  <p>هذا القميص مصنوع من 100% قطن ناعم ومريح. تصميم كلاسيكي يناسب جميع الأذواق ويأتي بألوان متعددة. مثالي للاستخدام اليومي أو أثناء ممارسة الأنشطة الرياضية. يوفر لك الراحة والأناقة في نفس الوقت.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__logo">
+              <img src="public/img/ElChamasBoutique.svg" alt="logo">
+              <p>اجعلوا الأناقة تشرق في حياتكم</p>
+            </div>
+            <div class="footer__box">
+              <h4 class="heading-4">معلومات المتجر:</h4>
+              <a href="/pages.html" class="footer__link">حول المتجر</a>
+              <a href="/pages.html" class="footer__link">سياسة الخصوصية</a>
+              <a href="/pages.html" class="footer__link">الشروط والأحكام</a>
+            </div>
+            <div class="footer__box">
+              <h4 class="heading-4">الدعم:</h4>
+              <a href="/pages.html" class="footer__link">الأسئلة الشائعة</a>
+              <a href="/pages.html" class="footer__link">الشحن والتوصيل</a>
+              <a href="/pages.html" class="footer__link">سياسة الإرجاع </a>
+              <a href="/pages.html" class="footer__link">اتصل بنا</a>
+            </div>
+            <div class="footer__box">
+              <h4 class="heading-4 tc">وسائل التواصل الاجتماعي:</h4>
+              <div class="flex">
+                <a class="footer__link" href="https://www.facebook.com/elchamsboutique/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a class="footer__link" href="https://www.instagram.com/elchamsboutique05/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a class="footer__link" href="fb.com" target="_blank"><i class="fa fa-twitter"></i></a>              
+              </div>
+            </div>
+          </div>
+          <p class="copy">to ElChamsBoutique &copy;</p>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="/src/script.js"></script>
+</html>

@@ -73,3 +73,21 @@ selectPro.addEventListener('change', (e) => {
   console.log(selectCity.disabled);
   selectCity.disabled = false;
 });
+// number of item ordered
+const orderInput = document.querySelector('#order_size');
+const orderSize = document.querySelector('.order');
+const total = document.querySelector('.total');
+let price = +total.textContent;
+orderSize.addEventListener('click', (e) => {
+  if (!e.target.closest('i')) return;
+  if (e.target.closest('i').classList.contains('fa-plus')) {
+    if (+orderInput.value >= 9) return;
+    orderInput.value = +orderInput.value + 1;
+    total.textContent = +total.textContent + price;
+  }
+  if (e.target.closest('i').classList.contains('fa-minus')) {
+    if (+orderInput.value <= 1) return;
+    orderInput.value -= 1;
+    total.textContent = +total.textContent - price;
+  }
+});
